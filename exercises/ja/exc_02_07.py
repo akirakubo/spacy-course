@@ -10,7 +10,7 @@ pos_tags = [token.pos_ for token in doc]
 for index, pos in enumerate(pos_tags):
     # 現在のトークンが固有名詞かどうかをチェック
     if pos == "PROPN":
-        # 次のトークンが動詞かどうかをチェック
-        if pos_tags[index + 1] == "VERB":
+        # 次のトークンが接置詞かどうかをチェック
+        if pos_tags[index + 1] == "ADP":
             result = token_texts[index]
-            print("動詞の前の固有名詞が見つかりました:", result)
+            print("接置詞の前の固有名詞が見つかりました:", result)

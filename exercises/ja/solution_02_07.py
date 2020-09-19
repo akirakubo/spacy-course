@@ -8,5 +8,5 @@ for token in doc:
     # 現在のトークンが固有名詞かどうかをチェック
     if token.pos_ == "PROPN":
         # 次のトークンが動詞かどうかをチェック
-        if doc[token.i + 1].pos_ == "VERB":
-            print("動詞の前の固有名詞が見つかりました:", token.text)
+        if doc[token.i + 1].pos_ == "ADP":
+            print("設置詞の前の固有名詞が見つかりました:", token.text)
