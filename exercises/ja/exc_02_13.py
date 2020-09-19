@@ -21,6 +21,11 @@ matcher = Matcher(nlp.vocab)
 matcher.add("PATTERN1", None, pattern1)
 matcher.add("PATTERN2", None, pattern2)
 
+# v2.3現在、日本語モデルではdoc.is_taggedが正しく設定されないので
+# 明示的に設定
+# 参考: https://github.com/explosion/spaCy/issues/5802
+doc.is_tagged = True
+
 # 結果をイテレートする
 for match_id, start, end in matcher(doc):
     # パターンの名前と一致したテキストをプリントする
