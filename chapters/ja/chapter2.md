@@ -239,7 +239,7 @@ for index, pos in enumerate(pos_tags):
 
 <exercise id="9" title="単語ベクトルの検査">
 
-この演習では、20,000個の単語ベクトルが含まれている大サイズの[日本語モデル](https://spacy.io/models/ja)を使います。
+この演習では、35,000個の単語ベクトルが含まれている中サイズの[日本語モデル](https://spacy.io/models/ja)を使います。
 このモデルは既にインストールされています。
 
 - 単語ベクトルの入っている中サイズモデル`"ja_core_news_md"`をロードしてください。
