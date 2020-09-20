@@ -180,7 +180,7 @@ pos_tags = [token.pos_ for token in doc]
 for index, pos in enumerate(pos_tags):
     # 現在のトークンが固有名詞かどうかをチェックする
     if pos == "PROPN":
-        # 次のトークンが設置詞かどうかを調べる
+        # 次のトークンが設置詞(Adposition)かどうかを調べる
         if pos_tags[index + 1] == "ADP":
             result = token_texts[index]
             print("設置詞の前の固有名詞が見つかりました:", result)
