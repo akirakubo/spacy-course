@@ -7,6 +7,6 @@ doc = nlp("ベルリンはいい街だと思う")
 for token in doc:
     # 現在のトークンが固有名詞かどうかをチェック
     if token.pos_ == "PROPN":
-        # 次のトークンが動詞かどうかをチェック
+        # 次のトークンが設置詞かどうかをチェック
         if doc[token.i + 1].pos_ == "ADP":
             print("設置詞の前の固有名詞が見つかりました:", token.text)
