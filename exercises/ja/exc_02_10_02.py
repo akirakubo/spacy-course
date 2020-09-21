@@ -1,6 +1,6 @@
 import spacy
 
-nlp = spacy.load("jp_core_news_md")
+nlp = spacy.load("ja_core_news_md")
 
 doc = nlp("テレビと本")
 token1, token2 = doc[0], doc[2]
