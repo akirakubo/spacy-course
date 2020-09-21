@@ -1,7 +1,7 @@
 from spacy.lang.ja import Japanese
 
 nlp = Japanese()
-doc = nlp("ネコを飼っています")
+doc = nlp("私はネコを飼っています")
 
 # 単語「ネコ」のハッシュを引く
 cat_hash = ____.____.____[____]
